@@ -1,17 +1,13 @@
 {
-    "Post": {
-      "title": { "string": {} },
-      "comments": {
-        "hasMany": "Comment"
-      }
-    },
-    "Comment": {
-        "messageTitle": { "string": {} },
-        "messageBody": { "string": {} },
-        "stars": { "int": { "min": 1, "max": 5}},
-        "isPublished": {"boolean": {}},
-        "post": {
-            "belongsTo": "Post"
-      }
-    }
-  }
+    "Comment": 
+        {
+            "messageTitle": { "string": {} },
+            "messageBody": { "string": {} },
+            "stars": { "int": { "min": 1, "max": 5}},
+            "isPublished": {"boolean": {}},
+            "post": 
+                {
+                    "belongsTo": "Post"
+                }
+        }
+}
