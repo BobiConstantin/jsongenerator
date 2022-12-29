@@ -7,7 +7,7 @@
     },
     "Comment": {
       "body": { "string": {} },
-      "stars": {"int": {}},
+      "stars": {"int": { "int": { "min": 1, "max": 5 }}},
       "post": {
         "belongsTo": "Post"
       }
