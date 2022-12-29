@@ -6,11 +6,12 @@
       }
     },
     "Comment": {
-      "body": { "string": {} },
-      "stars": { "int": { "min": 1, "max": 5}},
-      "isPublished": {"boolean": {}},
-      "post": {
-        "belongsTo": "Post"
+        "messageTitle": { "string": {} },
+        "messageBody": { "string": {} },
+        "stars": { "int": { "min": 1, "max": 5}},
+        "isPublished": {"boolean": {}},
+        "post": {
+            "belongsTo": "Post"
       }
     }
   }
